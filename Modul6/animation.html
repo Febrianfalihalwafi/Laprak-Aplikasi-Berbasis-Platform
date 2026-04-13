@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jQuery Animation</title>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    $("div").animate({
+                        height: 'toggle'
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p>Klik tombol untuk memulai animasi.</p>
+        <button>Start Animation</button>
+        <p>Secara default, semua elemen HTML memiliki posisi statis, dan tidak dapat dipindahkan.Untuk memanipulasi posisi, ingatlah untuk terlebih dahulu mengatur properti posisi CSS dari elemen tersebut menjadi relatif, tetap, atau absolut!</p>
+        <div style="background:#98bf21; height:100px; width:100px; position:absolute;">
+</div>
+    </body>
+</html>
