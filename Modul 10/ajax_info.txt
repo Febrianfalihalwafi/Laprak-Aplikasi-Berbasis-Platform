@@ -1,0 +1,4 @@
+<h1>AJAX</h1>
+<p>AJAX (Febrian Falih Alwafi) (2311102181).</p>
+<p>AJAX is a techinique for accessing web servers from a web page.</p>
+<p>AJAX stands for Asynchronous JavaScript And XML.</P>
