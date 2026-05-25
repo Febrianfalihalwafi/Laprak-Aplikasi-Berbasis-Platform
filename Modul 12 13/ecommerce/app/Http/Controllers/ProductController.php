@@ -8,10 +8,20 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function index()
-    {
-        $products = Product::all();
-        return view('products.index', ['products' => $products]);
-    }
+{
+    $prods = Product::with('variants')->get();
+
+    if (request()->segment(1) == 'api')
+        return response()->json([
+            'error' => false,
+            'list' => $prods,
+        ]);
+
+    return view('view_product', [
+        'title' => 'Daftar Produk',
+        'data' => $prods,
+    ]);
+}
 
     public function create()
     {
